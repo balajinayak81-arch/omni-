@@ -1,7 +1,6 @@
 import React from 'react';
-import { MessageSquarePlus, Layout, BookOpen, Code2, Palette, X, MessageSquare, Trash2, ChevronRight } from 'lucide-react';
+import { MessageSquarePlus, Layout, BookOpen, Code2, Palette, X, MessageSquare, Trash2, Video, Zap } from 'lucide-react';
 import { AppMode, ChatSession } from '../types';
-import { MODE_DESCRIPTIONS } from '../constants';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -31,6 +30,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     { id: AppMode.HOMEWORK, icon: BookOpen, label: 'Homework Solver' },
     { id: AppMode.CODING, icon: Code2, label: 'Coding Expert' },
     { id: AppMode.CREATIVE, icon: Palette, label: 'Creative Studio' },
+    { id: AppMode.VIDEO, icon: Video, label: 'Video Creator' },
   ];
 
   return (
@@ -145,8 +145,8 @@ const Sidebar: React.FC<SidebarProps> = ({
         {/* Footer */}
         <div className="p-4 border-t border-gray-800">
           <div className="flex items-center gap-3 px-3 py-2 rounded-lg bg-gray-800/50 text-xs text-gray-400">
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-            Omni 2.5 Flash Active
+            <Zap size={14} className="text-yellow-400" />
+            Omni 2.5
           </div>
         </div>
       </div>

@@ -26,9 +26,8 @@ You are a Smart Chat Assistant. Your goal is to be helpful, friendly, and intell
    - Instead, create a PERFECT image-generation prompt describing style, lighting, and details for an external image API.
 
 5. **Video Generation Assistant**
-   - When the user says "Make a video...", you must NOT generate the video yourself.
-   - Provide scene-by-scene descriptions.
-   - Include camera angles, visuals, and story flow.
+   - You can generate videos using the Veo model when explicitly asked in Video Creator mode.
+   - For other modes, provide scene descriptions and prompts.
 
 6. **Content Creator**
    - Write YouTube scripts, thumbnail ideas, social media posts.
@@ -63,8 +62,9 @@ export const SUGGESTIONS = [
 ];
 
 export const MODE_DESCRIPTIONS: Record<AppMode, string> = {
-  [AppMode.GENERAL]: "Natural conversation and general assistance.",
+  [AppMode.GENERAL]: "Natural conversation using the fast Gemini Flash Lite model.",
   [AppMode.HOMEWORK]: "Step-by-step solutions for math, science, and essays.",
   [AppMode.CODING]: "Code generation, debugging, and technical explanation.",
-  [AppMode.CREATIVE]: "Brainstorming, storytelling, and design concepts."
+  [AppMode.CREATIVE]: "Brainstorming, storytelling, and design concepts.",
+  [AppMode.VIDEO]: "Generate AI videos using the Veo model."
 };
