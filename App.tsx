@@ -304,10 +304,10 @@ function App() {
                 </div>
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
-                    How can I help you today?
+                    Hi! I’m your AI Assistant.
                   </h1>
                   <p className="text-gray-400 max-w-md mx-auto">
-                    I'm your smart AI assistant. Ask me about coding, homework, creative writing, or anything else.
+                    What would you like me to create today — text, image, video, audio, or explanation?
                   </p>
                 </div>
                 
