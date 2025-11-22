@@ -1,0 +1,5 @@
+{
+  "name": "OmniChat ",
+  "description": "A smart, multi-modal AI assistant capable of coding, homework help, content creation, and visual prompting using the Gemini 2.5 Flash model.",
+  "requestFramePermissions": []
+}
